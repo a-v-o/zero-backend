@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "task for stage zero of backend track ",
+  "homepage": "https://github.com/a-v-o/zero-backend#readme",
+  "bugs": {
+    "url": "https://github.com/a-v-o/zero-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-v-o/zero-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+  
+}

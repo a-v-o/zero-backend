@@ -1,8 +1,15 @@
 import express from "express";
 import axios from "axios";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
+
+app.get("/", (req, res) => {
+  res.send("Please go to /me");
+});
 
 app.get("/me", async (req, res) => {
   try {
@@ -29,8 +36,8 @@ app.get("/me", async (req, res) => {
     res.status(200).json({
       status: "success",
       user: {
-        email: "youremail@example.com",
-        name: "Your Full Name",
+        email: "adejuwonvictor2004@gmail.com",
+        name: "Adejuwon Oluwafunmito",
         stack: "Node.js/Express",
       },
       timestamp: new Date().toISOString(),
