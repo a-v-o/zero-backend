@@ -1,0 +1,21 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/strings
+Content-Type: application/json
+
+{
+    "value": "string to analyze"
+}
+
+###
+
+DELETE http://localhost:3000/strings/string to analyze
+
+###
+
+GET http://localhost:3000/strings?is_palindrome=false
+
+###
+GET http://localhost:3000/strings/filter-by-natural-language?query=palindrome
